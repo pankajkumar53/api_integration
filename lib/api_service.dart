@@ -9,6 +9,10 @@ class ApiService {
   Future<List<dynamic>> getPosts() async {
     final response = await http.get(Uri.parse("$baseurl/posts"));
 
+    final body = response.body;
+
+    debugPrint(response.body);
+
     if (response.statusCode == 200) {
       return jsonDecode(response.body);
     }
