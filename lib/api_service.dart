@@ -9,9 +9,9 @@ class ApiService {
   Future<List<dynamic>> getPosts() async {
     final response = await http.get(Uri.parse("$baseurl/posts"));
 
-    final body = response.body;
-
     final body1 = response.body;
+
+
     debugPrint(response.body);
     debugPrint(response.body);
 
