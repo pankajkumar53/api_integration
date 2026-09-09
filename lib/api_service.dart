@@ -11,7 +11,7 @@ class ApiService {
 
     final body = response.body;
 
-    debugPrint(response.body);
+    final body1 = response.body;
     debugPrint(response.body);
     debugPrint(response.body);
 
