@@ -12,6 +12,8 @@ class ApiService {
     final body = response.body;
 
     debugPrint(response.body);
+    debugPrint(response.body);
+    debugPrint(response.body);
 
     if (response.statusCode == 200) {
       return jsonDecode(response.body);
